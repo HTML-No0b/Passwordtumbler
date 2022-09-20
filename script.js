@@ -32,6 +32,16 @@ function passoptions() {
   console.log(letterbox);
 };
   
+function generatePassword(){
+  var password = "";
+  for (let index = 0; index < charlength.length; index++) {
+   var randomletter = math.floor(Math.random()* letterbox.length)
+  }
+  password=password + letterbox[uppercase]
+  return password
+};
+
+
   function writePassword() {
     passoptions();
     var password = generatePassword();
@@ -44,11 +54,11 @@ function passoptions() {
 
     //   return true;
     // };
-
+return
   };
 
   passoptions();
-  passoptions();
+  generatePassword();
 
   // Add event listener to generate button
   generateBtn.addEventListener("click", writePassword);
